@@ -33,25 +33,25 @@ int main()
  	for(i=1; i<=n; i++)
  	{
  		for(j=0; (j+i)<n; j++)
-   		{ 
-		   if(s[j] != s[j+i])
-		   {
-			   break;
-		   }		   
+   		{
+		 	if(s[j] != s[j+i])
+		   	{
+		    	 	break;
+		   	}		   
 		}
    		if((j+i) < n)
    		{
-   			continue; 
+   		 	continue; 
 		}   	
 		if(j!=0 && n%i==0)
 		{
-			printf("%d",i);
-		    break;
+		 	printf("%d",i);
+		 	break;
 		}
-    	else 
+    		else 
 		{
-	        printf("%d",n);
-		    break;
+	         	printf("%d",n);
+		 	break;
 		} 
  	}
  	return 0;
