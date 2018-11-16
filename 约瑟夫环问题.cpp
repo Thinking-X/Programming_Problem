@@ -65,17 +65,17 @@ void Algorithm(LNode* L)
 	}
 	p=NULL;
 	/*第二种方法 
-	int i=1;
+	int i=0;
 	while(L->next != L)
 	{
-		if(m-1==i)
+		i++;
+		if(m-1 == i)
 		{
 			L->next=L->next->next;
-			i=0;// 
+			i=0;
 		}
 		L=L->next;
-		i++;
-	}
+	}	
 	*/
 	printf("幸存者：\n%d",L->data);
 	return;
